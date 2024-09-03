@@ -1,0 +1,85 @@
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:black;
+    
+}
+a:hover {
+    color: blue;
+}
+nav {
+    margin-top: .25in;
+    text-align: center;
+    font-family: "Comfortaa";
+    border-bottom: grey solid 1pt;
+}
+a {
+    padding: 10pt 15pt 10pt 10pt;
+    font-size: 14pt;
+    font-family: "Comfortaa";
+    justify-content: center;
+}
+body {
+    font-family: "Comfortaa"; 
+    /*background-image: linear-gradient(to right, purple , cyan);*/
+}
+.Top-Center {
+    text-align: center;
+    font-size: 40pt;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.center {
+    text-align: center;
+}
+.item1 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.item2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding: 15pt;
+}
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.images {
+    height: 250pt;
+    width: 225pt;
+}
+.image1 {
+    position: absolute;
+    left: 600pt;
+    top: 675pt;
+}
+.image2 {
+    position: absolute;
+    top: 675pt;
+    left: 650pt;
+}
+.image3 {
+    position: absolute;
+    top: 675pt;
+    left: 700pt;
+}
+.image4 {
+    position: absolute;
+    top: 675pt;
+    left: 750pt;
+}
+.fade-in {
+    animation-name: fade;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fade {
+    0% {top:100px;
+        opacity: 0;}
+    100% {top: 0px;
+        opacity: 1;}
+}
